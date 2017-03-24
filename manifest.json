@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "forwardURL",
+    "description": "forwardURL",
+    "version": "0.1",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions" : [
+        "https://*/*",
+        "http://*/*"
+    ]
+}
