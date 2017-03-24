@@ -1,1 +1,1 @@
-# forward URL extension for Chrome
+# Forward URL extension for Chrome
