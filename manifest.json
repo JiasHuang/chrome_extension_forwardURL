@@ -6,8 +6,7 @@
     "browser_action": {
     },
     "permissions" : [
-        "https://*/*",
-        "http://*/*"
+        "tabs"
     ],
     "options_page": "settings.html",
     "background": {
