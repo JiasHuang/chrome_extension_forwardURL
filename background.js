@@ -9,7 +9,7 @@ function onTabGetCallback() {
     if (chrome.runtime.lastError) {
         chrome.tabs.create({url: tabURL}, onTabCreateCallback);
     } else {
-        chrome.tabs.update(tabId, {url: tabURL});
+        chrome.tabs.update(tabId, {url: tabURL, active: true});
     }
 }
 
