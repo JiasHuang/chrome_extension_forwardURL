@@ -18,13 +18,10 @@ function onForward () {
     if (prefix && prefix.length > 0) {
         chrome.tabs.getSelected(null, function(tab) {
             tabURL = prefix + tab.url;
-            var result = confirm(tabURL);
-            if (result) {
-                if (tabId === false) {
-                    chrome.tabs.create({url: tabURL}, onTabCreateCallback);
-                } else {
-                    chrome.tabs.get(tabId, onTabGetCallback);
-                }
+            if (tabId === false) {
+                chrome.tabs.create({url: tabURL}, onTabCreateCallback);
+            } else {
+                chrome.tabs.get(tabId, onTabGetCallback);
             }
         });
     }
